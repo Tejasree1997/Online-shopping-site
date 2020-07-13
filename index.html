@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styleSheet.css">
+
+    <title>home</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img id="logoImg" src="img/logo//logo.png "  alt="logo"></div>
+        <div id="searchBar"><input type="text" placeholder="Search.." onkeyup="search(this)"></div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li><button>Home</button></li>
+                <li class="dropDown"><button id="lap" onclick="filter(this)">Laptop</button></li>
+                <li class="dropDown"><button id = "accessories" onclick="filter(this)">Accessories</button></li>
+                
+                 
+<!-----Login form ------>
+
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <table class="setting">
+                    <tr>
+                        <td><input type="text" name="UserName" id="firstName" placeholder="UserName" required
+                                class="third"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" id="lastName" placeholder="password" required
+                                class="four">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login" name="login" class="button" onclick="check()">
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <button style="font-size:15px;cursor:pointer;border-radius:10px;width:50px;margin-right:90px"
+                onclick="openNav()">
+                Login</button>
+
+
+
+            <!----  LOGOUT ---->
+            <button style="font-size:15px;cursor:pointer;border-radius:10px;width:50px;margin-right:-120px"
+                onclick="logout()">Logout</button>
+            </ul>
+            
+            <div class="laptopsDropDown">
+                <ul>
+                    <li>Dell</li>
+                    <li>HP</li>
+                    <li>Asus</li>
+                </ul>
+            </div>
+            <div class="accessoriesDropDown">
+                <ul>
+                    <li>Adapters</li>
+                    <li>Screen Guards</li>
+                    <li>Pen Drives</li>
+                    <li>External Hard Disks</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="cart"><img id="cartImg" src="img\add_to_cart_icon\icon.png" alt="cart">
+        <div>
+            <span class="cart_icon">0</span>
+        </div>
+    </div>
+    
+
+    <main>
+        
+
+
+</main>
+
+<footer></footer>
+</body>
+<script src="js/project.js" async></script>
+</html>
